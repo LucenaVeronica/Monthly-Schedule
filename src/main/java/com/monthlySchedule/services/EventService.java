@@ -94,10 +94,10 @@ public class EventService {
         LocalDate randomDate2 = getRadomDate(today, today.plusDays(lastDay-today.getDayOfMonth()));
         LocalDate randomDate3 = getRadomDate(today, today.plusDays(lastDay-today.getDayOfMonth()));
         LocalDate randomDate4 = getRadomDate(today, today.plusDays(lastDay-today.getDayOfMonth()));        
-        events.add(saveEvent(new Event( "Week off", "Holiday", formatter.format(randomDate1), formatter.format(randomDate1.plusDays(8)), instructor)));
-        events.add(saveEvent(new Event( "Seminar", "Data analysis", formatter.format(randomDate2), formatter.format(randomDate2.plusDays(8)), instructor)));
-        events.add(saveEvent(new Event( "Seminar", "Social and political networks", formatter.format(randomDate3), formatter.format(randomDate3.plusDays(8)), instructor)));
-        events.add(saveEvent(new Event( "Project", "Project management", formatter.format(randomDate4), formatter.format(randomDate4.plusDays(8)), instructor)));
+        events.add(saveEvent(new Event( "Week off", "Holiday", formatter.format(randomDate1), formatter.format(randomDate1.plusDays(7)), instructor)));
+        events.add(saveEvent(new Event( "Seminar", "Data analysis", formatter.format(randomDate2), formatter.format(randomDate2.plusDays(7)), instructor)));
+        events.add(saveEvent(new Event( "Seminar", "Social and political networks", formatter.format(randomDate3), formatter.format(randomDate3.plusDays(7)), instructor)));
+        events.add(saveEvent(new Event( "Project", "Project management", formatter.format(randomDate4), formatter.format(randomDate4.plusDays(7)), instructor)));
         return events;  
     }
     
